@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in | Aqua by AquaTech Solutions</title>
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="login-wrap">
+  <section class="login-art" aria-hidden="false">
+    <div>
+      <div class="brand" id="brand"></div>
+      <h1>Security habits that stick.</h1>
+      <p>Short training, realistic phishing practice and one dashboard for ISMT College.</p>
+      <div class="mini" aria-hidden="true">
+        <div class="flag"><b>IT Support &lt;it-helpdesk@ismt-college-support.com&gt;</b><small>Action required: verify your mailbox storage limit</small></div>
+      </div>
+    </div>
+    <small>AquaTech Solutions, Team 07. CET257 Enterprise Project.</small>
+  </section>
+  <main class="login-form" id="main">
+    <form id="f" novalidate>
+      <h2>Sign in to Aqua</h2>
+      <p class="hint">Administrators and employees sign in here and are sent to their own portal.</p>
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="username" required>
+      <label for="pw">Password</label>
+      <input id="pw" type="password" autocomplete="current-password" required>
+      <div id="msg" role="alert"></div>
+      <div class="actions"><button class="btn amber" id="go" type="submit">Sign in</button></div>
+      <div class="demo">
+        <b>Demo accounts</b> (sample data only)<br>
+        Admin: <button type="button" data-e="admin@aquatech.demo" data-p="Admin@123">admin@aquatech.demo</button><br>
+        Employee: <button type="button" data-e="anita.sharma@ismt.demo" data-p="Employee@123">anita.sharma@ismt.demo</button><br>
+        <span class="hint">Click an address to fill the form.</span>
+      </div>
+    </form>
+  </main>
+</div>
+<script src="/js/common.js"></script>
+<script src="/js/login.js"></script>
+</body>
+</html>
